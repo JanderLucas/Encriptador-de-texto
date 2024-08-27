@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/logoAlura.png" type="image/png">
+    <title>Challenge | Encriptador</title>
+</head>
+<body>
+    <header>
+        <a class="logoAlura" href="#" aria-label="Página inicial">
+            <img src="assets/img/logoAlura.png" alt="Logo da Alura">
+        </a>
+    </header>
+
+    <main>
+        <section>
+            <textarea class="text-area" cols="40" rows="04" placeholder="Digite seu texto" aria-label="Área de texto para entrada"></textarea>
+            <p class="informacao">
+                <img src="assets/img/Vector.png" alt="Ícone informativo"> Apenas letras minúsculas e sem acentos.
+            </p>
+
+            <div class="botoes">
+                <button class="btn-encriptar btn" onclick="btnEncriptar(), clicado(imagem)">Criptografar</button>
+                <button class="btn-desencriptar btn" onclick="btnDesencriptar(), clicado(imagem)">Descriptografar</button>
+            </div>
+        </section>
+        
+        <section class="campo-mensagem">
+            <textarea class="mensagem" cols="21" rows="10" id="campo-mensagem" readonly aria-label="Área de texto para resultado"></textarea>
+            <img src="assets/img/boneco.png" alt="Boneco azul" id="img-mensagem">
+            <button class="btn-copiar btn" onclick="btnCopiar(mensagem)">Copiar</button>
+        </section>    
+    </main>
+    
+    <script src="assets/script.js" defer></script>
+</body>
+</html>
